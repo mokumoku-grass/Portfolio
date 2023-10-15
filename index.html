@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOKUMOKU_portfolio</title>
+    <link rel="stylesheet" href="css/style.css">   
+    <link rel="stylesheet" href="css/menu.css">   
+    <link rel="stylesheet" href="css/worksDetail.css">   
+    <link rel="stylesheet" href="css/contactDetail.css">   
+</head>
+<body>
+  <header class="header">
+    <div class="nav">
+      <div></div>
+      <div id="nav_id" class="nav_list">
+        <a id="nav_home" class="nav_item hidden" href=".home">HOME</a>
+        <a id="nav_about" class="nav_item hidden" href=".about">ABOUT</a>
+        <a id="nav_skill" class="nav_item hidden" href=".skill">SKILL</a>
+        <a id="nav_works" class="nav_item hidden" href=".works">WORKS</a>
+        <a id="nav_contact" class="nav_item hidden" href=".contact">CONTACT</a>
+      </div>
+      <div></div>     
+    </div>
+
+    <div class="sp-menu">
+      <img src="images/hamburger.png" id="open">
+    </div>
+
+    <div class="overlay">
+      <div id="nav_id" class="nav_list">
+        <a id="nav_home" class="nav_item hidden" href=".home">HOME</a>
+        <a id="nav_about" class="nav_item hidden" href=".about">ABOUT</a>
+        <a id="nav_skill" class="nav_item hidden" href=".skill">SKILL</a>
+        <a id="nav_works" class="nav_item hidden" href=".works">WORKS</a>
+        <a id="nav_contact" class="nav_item hidden" href=".contact">CONTACT</a>
+      </div>
+    </div>
+  </header>
+  
+  <main class="main">
+    <section class="home">
+      <div>
+        <p>MokuMoku</p>
+        <p>Portfolio</p>
+        <a>TOMOKI HAYASHIBARA</a><br>
+        <a>- Web Engineer -</a>
+      </div>
+    </section>
+
+    <section class="about container">
+        <h1>ABOUT</h1>
+        <div class="about-int">
+          <div class="self-img">
+            <img src = "images/about.jpg">
+          </div>
+          <div class="self-int">
+            <h2>自己紹介</h2>
+            <a>神戸大学工学部に入学後、大学の授業では学べないスキルを取得したいと考え、大学４年次に休学しました。
+            現在の休学期間は２年間になります。この期間にHTML、CSS、 Javascriptを独学で１年ほど学びました。
+            <br>最近は新たにPHPの勉強も進めつつ、シンプルさと使っていて楽しいUXデザインを意識した、オリジナルの仮想WEBサイトの制作をしております。
+          </div>  
+        </div>
+      </section>
+
+    <section class="skill container">
+        <h1>SKILL</h1>
+        <ul>
+          <li>HTML & CSS</li>
+          <p>後述のJavaSctiptと連携したレスポンシブデザインなどの動的なサイト制作が可能です。エディタはVScodeを使用しています。</p>
+          <li>JavaScript</li>
+          <p>jQueryを活用し、動く背景やスライドショーなどを実装できます。また、オブジェクトや繰り返し構文を用いた基本的なコーディングは可能です。</p>
+          <li>WordPress</li>
+          <p>制作したホームページと連携してブログを運用しています。</p>
+          <li>Adobe Illustrator</li>
+          <p>シンプルなロゴやアイコン制作ができます。WORKSに自作したロゴを掲載しているのでぜひご覧ください。</p>
+          <li>その他（資格・語学）</li>
+          <p>2021/11　ITパスポート試験　合格</p>
+          <p>2023/05　基本情報技術者　　合格</p>
+          <p>2023/03　TOEIC 740点　　 &nbsp;&nbsp; 取得</p>
+          <p></p>
+        </ul>              
+    </section>
+
+    <section class="works container">
+      <h1>WORKS</h1>
+      <ul>
+        <li>
+          <a class="WorksImg">
+            <img src="images/worksOfLogo.png" alt="WORK1">
+            <h2>オリジナルロゴ集</h2>
+          </a>
+        </li>
+        <li>
+          <a class="WorksImg">
+            <img src="images/worksOfMokuserch.png" alt="WORK2">
+            <h2>商品検索アプリ</h2>
+          </a>
+        </li>
+        <li>
+          <a class="WorksImg">
+            <img src="images/worksOfMokuoku.png" alt="WORK3">
+            <h2>仮想オークションサイト</h2>
+          </a>
+        </li>
+        <li>
+          <a class="WorksImg">
+            <img src="images/worksOfOreoblog.png" alt="WORK4">
+            <h2>ペット紹介ブログHP</h2>
+          </a>
+        </li>
+      </ul>
+      <div class="worksDetail">
+        <a id="closeWorks">close</a>
+
+        <div class="about container work hideWorks">
+          <div>
+            <div>
+              <img src = "images/worksOfLogo.png" id="worksImg1">
+            </div>
+            <div>
+              <h2>オリジナルロゴ集</h2>
+              <a>Adobe Illustlator で作成したオリジナルロゴ、アイコンです。オリジナルサイトのロゴやメニューアイコン、検索アイコンに使用しています。</a>
+            </div>  
+          </div>
+        </div>  
+        
+        <div class="about container work hideWorks">
+          <div>
+            <div>
+              <img src = "images/worksOfMokuserch.png">
+            </div>
+            <div>
+              <h2>商品検索アプリ</h2>
+              <a>雑貨店のスタッフが商品の場所を検索する事を想定し作成しました。商品カテゴリ、商品名を選択するとマップが表示されます。[使用言語:HTML, CSS, JavaScript]</a>
+              <div>
+                <a class="works-link" href="https://mokumoku-grass.com/wp-content/SerchAplication">制作物を閲覧</a>
+              </div>
+            </div>  
+          </div>
+        
+        </div>
+        <div class="about container work hideWorks">
+          <div>
+            <div>
+              <img src = "images/worksOfMokuoku.png">
+            </div>
+            <div>
+              <h2>仮想オークションサイト</h2>
+              <a>商品の検索、出品、購入ができるシンプルなオークションサイトです。ヘッダーのマイリストやピックアップを選択すると画面が切り替わります。（著作権等を考慮し、画像などはこの紹介画像から消しています。）[使用言語:HTML, CSS, JavaScript]</a>
+              <div>
+                <a class="works-link" href="https://mokumoku-grass.com/wp-content/MokumokuAuction/">制作物を閲覧</a>
+              </div>
+
+            </div>  
+          </div>
+        </div>
+        
+        <div class="about container work hideWorks">
+          <div>
+            <div>
+              <img src = "images/worksOfOreoblog.png">
+            </div>
+            <div>
+              <h2>work4</h2>
+              <a>ワンちゃんの魅力を紹介するブログのホームページです。実際に我が家のアイドルにモデルをしてもらっています。Slickを使用しており、数秒ごとにメイン画像が自動でスライドします。[使用言語:HTML, CSS, JavaScript]</a>
+              <div>
+                <a class="works-link" href="https://mokumoku-grass.com/wp-content/oreo-folder/ver4/">制作物を閲覧</a>
+              </div>
+            </div>  
+          </div>
+        </div>        
+      </div>
+    </section>
+
+    <section class="contact container">
+      <div>
+        <h1>CONTACT</h1>
+        <div align="center">
+          <button type="submit" id="contactButton" value="確認" onclick="location.href = 'contact.php'">Click!!</button>
+        </div>
+      </div>
+
+    </section>           
+  </main>
+
+  <footer>
+    <small>(c) MOKUMOKU.com </small>
+  </footer>
+
+</body>
+<script src="js/bubbly-bg.js"></script>
+<script src="js/main.js"></script>
+</html>

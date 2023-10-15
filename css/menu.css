@@ -1,0 +1,164 @@
+header {
+  position: fixed;
+  width:100%;
+}
+
+.hideHeader {
+  display: none;
+}
+
+.sp-menu {
+  margin-left:88%;
+  z-index: 1;
+}
+
+.sp-menu img {
+  padding-top: 8px;
+  width: 40px;
+  cursor: pointer;
+}
+.sp-menu img:hover {
+  scale:120%;
+  transition: 0.6s;
+}
+
+/* 見えないようにする */
+.sp-menu #open.hide {
+  display: none;
+}
+
+.overlay {
+  /* position: fixed; */
+  background: rgba(0,0,0, 0.85);
+  padding: 16px;
+  margin-top: 0;
+  opacity: 0;
+  border-radius: 8px;
+  transform: translateX(75%);
+  /* クリックできないようにする */
+  pointer-events: none;
+  display: flex;
+  flex-direction:column;
+
+  transition: transform .6s;
+  transition: opacity .6s;
+}
+
+.overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.overlay #close {
+  color: aquamarine;
+  top: 16px;
+  right: 16px;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.overlay #close:hover {
+  color: tomato;
+  transition: 0.5s;
+}
+
+.overlay .nav_list {
+ margin-bottom:8px;
+ padding: 0 8px 0;
+}
+
+.overlay a {
+  margin-top: 16px;
+  padding: 0 16px 0 0;
+  opacity: 0;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  
+  transform: translateY(16px);
+  transition: opacity .5s, transform .5s;
+}
+
+.overlay.show a {
+  opacity: 1;
+  transform: none;
+}
+
+.nav {
+  display: none;
+}
+
+.nav > div {
+  flex: 1;
+}
+
+.nav .nav_list {
+  display: flex;
+}
+
+nav a {
+  justify-content: space-between;
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav .hidden {
+  transform: translate(1000px, 0);
+}
+
+.nav_item {
+  padding-left: 16px;
+  padding-right: 16px;
+
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  transition: transform 1.5s;
+}
+
+.nav_item a {
+  text-decoration: none;
+
+}
+
+.nav_item:hover {
+  transition: color 0.5s;
+  color: tomato;
+}
+
+@media (min-width: 600px) {
+  header {
+    background: #111;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    height: 60px;
+    z-index: 1;
+  }  
+
+  .nav {
+    display: flex;
+    padding-top: 10px;
+  }
+
+  .header-scrolled {
+    background-color: #111;
+    opacity: 0.85;
+  }
+  
+  .sp-menu {
+    display: none;
+  }
+}
+
+@media (min-width:800px) {
+  .nav_item {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  
+  .nav a {
+    font-size: 28px;
+  }
+}

@@ -1,0 +1,98 @@
+/* ===== Worksの詳細画面 ===== */
+
+.worksDetail {
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: auto;
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding: 80px;
+  opacity: 0;
+
+  /* クリックできないようにする */
+  pointer-events: none;
+
+  transition: opacity .6s;
+}
+
+.worksDetail.show {
+  opacity: 1;
+  pointer-events: auto; 
+}
+
+.worksDetail #close {
+  /* position: absolute; */
+  margin-right:auto;
+  
+  top: 16px;
+  right: 16px;
+  font-size: 32px;
+  cursor: pointer;
+  color: brown;
+}
+
+.worksDetail #close:hover {
+  color: brown;
+}
+
+.worksDetail .about {
+  height: auto;
+}
+
+.worksDetail .about > div {
+  margin-top: 32px;
+  display: flex;
+  flex: 2;
+  flex-flow: column;
+  text-align: center;
+  gap: 8px;
+}
+
+.worksDetail .about img {
+  width: 80%;
+  height: auto;
+}
+
+.worksDetail #worksImg1 {
+  width: 80%;
+}
+
+.hideWorks {
+  display: none; 
+ }
+
+/* リンクのデザイン */
+
+ .work div div div a {
+  font-size: 20px;
+  text-decoration: underline;
+  color: blue;
+ }
+
+ .work .works-link:hover {
+  cursor: pointer;
+  color: tomato;
+  transition: 0.6s;
+ }
+
+/* ----- 閉じるボタン ----- */
+
+#closeWorks {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0 8px;
+  transition: 0.6s;
+  color: aqua;
+  border-radius:24px;
+  cursor: pointer;
+}
+
+#closeWorks:hover {
+  color: tomato;
+}
+
+  

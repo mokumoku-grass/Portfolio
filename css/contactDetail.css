@@ -1,0 +1,80 @@
+/* ========== contactの詳細画面 ========== */
+
+.contactDetail {
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: auto;
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding: 80px;
+  opacity: 0;
+
+  /* クリックできないようにする */
+  pointer-events: none;
+
+  transition: opacity .6s;
+}
+
+.contactDetail.show {
+  opacity: 1;
+  pointer-events: auto; 
+}
+
+.contactDetail #close {
+  /* position: absolute; */
+  margin-right:auto;
+  
+  top: 16px;
+  right: 16px;
+  font-size: 32px;
+  cursor: pointer;
+  color: brown;
+}
+
+.contactDetail #close:hover {
+  color: brown;
+}
+
+.contactDetail .about {
+  height: auto;
+}
+
+.contactDetail .about > div {
+  margin-top: 32px;
+  display: flex;
+  flex: 1;
+  flex-flow: column;
+  text-align: center;
+  gap: 8px;
+}
+
+.contactDetail h2 {
+  margin-bottom: 16px;
+}
+
+.hideClick {
+  display: none;
+}
+
+/* ----- 閉じるボタンのスタイル ----- */
+
+#closeContact {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0 8px;
+  transition: 0.6s;
+  color: white;
+  border-radius:24px;
+  cursor: pointer;
+}
+
+#closeContact:hover {
+  color: tomato;
+}
+
+
+
